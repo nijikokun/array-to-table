@@ -74,4 +74,4 @@ Licensed under [The MIT License](LICENSE).
 [david-url]: https://david-dm.org/Nijikokun/array-to-table
 [david-image]: https://img.shields.io/david/Nijikokun/array-to-table.svg?style=flat
 
-[download]: https://github.com/Nijikokun/array-to-table/archive/v1.0.0.zip
+[download]: https://github.com/Nijikokun/array-to-table/archive/v1.0.1.zip
