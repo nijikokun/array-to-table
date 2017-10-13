@@ -53,6 +53,16 @@ Id | Icon | Name
 006 | ![006](http://www.psypokes.com/dex/picdex/minis/006.png) | Charizard
 151 | ![151](http://www.psypokes.com/dex/picdex/minis/151.png) | Mew
 
+**Table alignment**
+
+The table results can be aligned to the left, right or center (default) using the third parameter.
+
+Example:
+
+```js
+arrayToTable(array, null, 'left')
+```
+
 ## License
 
 Licensed under [The MIT License](LICENSE).
