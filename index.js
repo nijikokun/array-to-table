@@ -3,11 +3,17 @@
  *
  * @param  {Array} array    Array of objects
  * @param  {Array} columns  Optional, table column names, otherwise taken from the keys of the first object
+ * @param  {String} alignment Optional table alignment. Can be 'center' (default), 'left' or 'right'
  *
  * @return {String} Markdown table
  */
-module.exports = function arrayToTable (array, columns) {
+module.exports = function arrayToTable (array, columns, alignment = 'center') {
   var table = ""
+  var separator = {
+    'left': ':---',
+    'right': '---:',
+    'center': '---'
+  }
 
   // Generate column list
   var cols = columns
@@ -20,7 +26,7 @@ module.exports = function arrayToTable (array, columns) {
 
   // Generate table header seperator
   table += cols.map(function () {
-    return '---'
+    return separator[alignment] || separator.center
   }).join(' | ')
   table += "\r\n"
 
